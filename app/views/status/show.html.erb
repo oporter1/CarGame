@@ -1,0 +1,28 @@
+<h1>Status#show</h1>
+<p>Find me in app/views/status/show.html.erb</p>
+
+Your car is a: <%=@car.make_and_year%>
+</br>
+Your car's speed: <%=@car.speed%>
+</br>
+<br>
+<form action="/status/accelerate" method="get">
+  <input type="submit" value="Accelerate" name="accelerate"/>
+</form>
+
+<form action="/status/brake" method="get">
+  <input type="submit" value="Brake" name="brake"/>
+</form>
+
+</br>
+<form action="">
+  <input type="radio" name="lights" value="Turnlightson"/> Turn Lights On</br>
+  <input type="radio" name="lights" value="Turnlightsoff"/> Turn Lights Off</br>
+</form>
+
+</br>
+
+<form action="/status/parkingbreak" method="get">
+  <input type="radio" name="brake"  value="parkingbreakon"/> Parking Break On</br>
+  <input type="radio" name="brake"  value="parkingbreakoff"/> Parking Break Off</br>
+</form>
